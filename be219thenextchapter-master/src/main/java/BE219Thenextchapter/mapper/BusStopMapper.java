@@ -1,9 +1,13 @@
 package BE219Thenextchapter.mapper;
 
+import BE219Thenextchapter.dto.BusLineDTO;
 import BE219Thenextchapter.dto.BusStopDTO;
+import BE219Thenextchapter.model.BusLine;
+import BE219Thenextchapter.model.BusPlan;
 import BE219Thenextchapter.model.BusStop;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.List;
 
@@ -17,3 +21,4 @@ public interface BusStopMapper {
     BusStop busStopDTOToBusStop(BusStopDTO busStopDTO);
     List<BusStop> busStopDTOsToBusStops(List<BusStopDTO> busStopDTOs);
 }
+
